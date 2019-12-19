@@ -390,7 +390,7 @@ FollowTarget::set_follow_target_item(struct mission_item_s *item, float min_clea
 	}
 
 	item->altitude_is_relative = false;
-	item->yaw = yaw;
+        item->yaw = 0.0f;
 	item->loiter_radius = _navigator->get_loiter_radius();
 	item->acceptance_radius = _navigator->get_acceptance_radius();
 	item->time_inside = 0.0f;
